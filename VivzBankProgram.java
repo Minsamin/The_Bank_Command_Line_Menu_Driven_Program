@@ -265,11 +265,12 @@ class Account {
                 if (tempBalance >= 100) {
                     balance = balance - howMuch;
                     System.out.println("You withdrew " + howMuch + " from your account. Your new balance is " + balance);
+                  firstTime = false;
                 } else {
 
                     System.err.println("Insufficient balance to remove " + howMuch);
                 }
-                firstTime = false;
+               
             } else {
                 Bank bank = new Bank();
                 double tempBalance = balance;
